@@ -1,0 +1,30 @@
+footer {
+    background: lightgray;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 3rem 6rem;
+    .top {
+        display: flex;
+    }
+    .bottom {
+        display: flex;
+        .center {
+            ul {
+                display: flex;
+                list-style-type: none;
+                justify-content: space-between;
+                padding-left: 0;
+            }
+        }
+        .right {
+            ul {
+                display: flex;
+                list-style-type: none;
+                justify-content: flex-end;
+                padding-left: 0;
+            }
+        }
+    }
+}
