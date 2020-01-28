@@ -1,15 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './app.scss';
 import Header from './components/header/index';
+import Main from './components/main/index';
 import Footer from './components/footer/index';
 
 class App extends React.Component {
   render() {
       return (
-          <div>
+          <div id="theme" className="light">
             <Header />
-            <div>i am app</div>
+            <Main />
             <Footer />
           </div>
       );
