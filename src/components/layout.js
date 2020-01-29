@@ -1,17 +1,15 @@
 import React from 'react';
 
-class Main extends React.Component {
-    render(){
+const Layout = ({children}) => {
         return (
             <React.Fragment>
                 <main>
                     <div className="container">
-                        I am main content.
+                        {children}
                     </div>
                 </main>
             </React.Fragment>
         );
-    }
 }
 
-export default Main;
+export default Layout;

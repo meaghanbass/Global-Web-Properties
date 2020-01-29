@@ -1,17 +1,20 @@
 import React from 'react';
+import twitter from '../../images/twitter.svg';
+import facebook from '../../images/facebook.svg';
+import linkedin from '../../images/linkedin.svg';
 
 class Footer extends React.Component {
     render(){
         return (
             <React.Fragment>
                 <footer>
-                    <div className="container">
+                    <div className="grid-container">
                         <div className="top">
-                            <div className="w-1/3 site_info_title">
+                            <div className="site_info_title">
                                 <p>Site Title</p>
                             </div>
-                            <div className="w-2/3 link-sections">
-                                <div>
+                            <div className="link-sections">
+                                <div className="ls_1">
                                     <h3>Community</h3>
                                     <ul>
                                         <li><a href="/">About</a></li>
@@ -20,7 +23,7 @@ class Footer extends React.Component {
                                         <li><a href="/">Slack</a></li>
                                     </ul>
                                 </div>
-                                <div>
+                                <div className="ls_2">
                                     <h3>Getting Started</h3>
                                     <ul>
                                         <li><a href="/">Introduction</a></li>
@@ -32,7 +35,7 @@ class Footer extends React.Component {
                                         <li><a href="/">Themes</a></li>
                                     </ul>
                                 </div>
-                                <div>
+                                <div className="ls_3">
                                     <h3>Resources</h3>
                                     <ul>
                                         <li><a href="/">API</a></li>
@@ -47,25 +50,22 @@ class Footer extends React.Component {
                             </div>
                         </div>
                         <div className="bottom">
-                            <div className="w-1/3 left">
+                            <div className="left">
                                 <p>&copy; 2020 flow-ui. All rights reserved.</p>
-                                {/* <button id="jsbtn" onClick={btnToggle}>
-                                    Toggle Theme
-                                </button> */}
                             </div>
-                            <div className="w-1/3 center">
+                            <div className="center">
                                 <ul>
                                     <li><a href="/">Contact</a></li>
-                                    <li><a href="/">Terms of Service</a></li>
+                                    {/* <li><a href="/">Terms of Service</a></li> */}
                                     <li><a href="/">Privacy Policy</a></li>
                                     <li><a href="/">Sitemap</a></li>
                                 </ul>
                             </div>
-                            <div className="w-1/3 right">
+                            <div className="right">
                                 <ul>
-                                    <li><a href="/">FB</a></li>
-                                    <li><a href="/">TW</a></li>
-                                    <li><a href="/">DR</a></li>
+                                    <li><img src={twitter} width="20px" height="20px"></img></li>
+                                    <li><img src={facebook} width="20px" height="20px"></img></li>
+                                    <li><img src={linkedin} width="20px" height="20px"></img></li>
                                 </ul>
                             </div>
                         </div>
